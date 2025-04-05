@@ -1,0 +1,108 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #F4FBFD;
+    color: #2E86C1;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .quiz-container {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 30px;
+    max-width: 800px;
+    margin: 50px auto;
+    box-shadow: 0 4px 15px rgba(46, 134, 193, 0.3);
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #1E6C86;
+  }
+  
+  .question {
+    margin-bottom: 25px;
+    animation: slideUp 0.5s ease-in-out;
+  }
+  
+  .question p {
+    font-weight: bold;
+    color: #1E6C86;
+  }
+  
+  label {
+    display: block;
+    margin: 5px 0;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  label:hover {
+    background: #E6F8F8;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  .submit-btn {
+    background-color: #2E86C1;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    margin-top: 20px;
+  }
+  
+  .submit-btn.glow:hover {
+    box-shadow: 0 0 10px #2E86C1, 0 0 20px #2E86C1, 0 0 30px #2E86C1;
+    background-color: #1A5D9B;
+  }
+  
+  #result {
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #134055;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .glow-result {
+    margin-top: 20px;
+    padding: 15px 20px;
+    background: #E6F8F8;
+    border-radius: 12px;
+    font-size: 18px;
+    color: #134055;
+    animation: glowFade 2s infinite alternate;
+    box-shadow: 0 0 8px rgba(46, 134, 193, 0.6);
+  }
+  
+  @keyframes glowFade {
+    from {
+      box-shadow: 0 0 8px rgba(46, 134, 193, 0.6);
+    }
+    to {
+      box-shadow: 0 0 16px rgba(46, 134, 193, 1);
+    }
+  }
+  

@@ -1,0 +1,138 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 15px 20px;
+    border-bottom: 3px solid white;
+}
+
+.logo {
+    width: 120px;
+    cursor: pointer;
+}
+
+/* Header Navigation */
+.header-content {
+    display: flex;
+    gap: 20px;
+}
+
+/* Header Links */
+.header-content a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    border: 2px solid white;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: 0.3s ease;
+}
+
+.header-content a:hover {
+    background-color: white;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Main Box Styling */
+.box {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 12px;
+    padding: 40px;
+    margin: 40px auto;
+    width: 60%;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+/* Fade-in animation */
+.box.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Hover glow effect */
+.box.hover-glow {
+    box-shadow: 0 0 30px rgba(0, 255, 204, 0.5), 0 0 50px rgba(0, 140, 255, 0.3);
+    transform: scale(1.02);
+}
+
+/* Title Gradient */
+.animated-gradient {
+    background: linear-gradient(90deg, #00d2ff, #3a47d5);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent; /* Fallback for unsupported browsers */
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+
+/* Description */
+.description {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-secondary {
+    background-color: #28a745;
+}
+
+.btn-secondary:hover {
+    background-color: #1e7e34;
+}
+
+/* Button Container */
+.btn-container {
+    margin-top: 20px;
+}
+
+.btn-container .btn {
+    background: #444;
+    padding: 12px 25px;
+    border-radius: 8px;
+}
+
+.btn-container .btn:hover {
+    background: #222;
+    transform: scale(1.05);
+}
